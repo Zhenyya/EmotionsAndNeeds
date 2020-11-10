@@ -22,11 +22,11 @@ public class ConsoleController {
         String userChoice;
         do {
             userChoice = view.start();
-            System.out.println("Your choice is " + userChoice);
+            System.out.println("Your choice is " + userChoice); // delete later
             switch (userChoice) {
                 case "1":
                 case "2":
-                    getSetOfCards(userChoice);
+                    workWithSetCards(getSetOfCards(userChoice));
                     break;
                 case "3":
                     // some code
@@ -55,5 +55,15 @@ public class ConsoleController {
             }
         }
         return cards;
+    }
+
+    private void workWithSetCards(Set<String> setCards) {
+        String userInput;
+        for (String card : setCards) {
+            userInput = view.workWithCard(card);
+            if(userInput.equals("Y")) {
+                // some code
+            }
+        }
     }
 }

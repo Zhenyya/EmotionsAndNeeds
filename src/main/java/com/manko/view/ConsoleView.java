@@ -33,14 +33,11 @@ public class ConsoleView {
         showMainMenu();
         System.out.println("Please, select the menu point.");
         return scanner.nextLine().toUpperCase();
+    }
 
-//        String keyMenu;
-//        do {
-//            showMainMenu();
-//            System.out.println("Please, select the menu point.");
-//            keyMenu = scanner.nextLine();
-//            System.out.println("Your choice is " + keyMenu);
-//        } while(!keyMenu.toUpperCase().equals("Q"));
-//        System.out.println();
+    public String workWithCard(String card) {
+        System.out.println(card);
+        System.out.println("Does this card fit your mood? \\nPlease, input <Y> if it does or <N> if it doesn't");
+        return scanner.nextLine().toUpperCase();
     }
 }
