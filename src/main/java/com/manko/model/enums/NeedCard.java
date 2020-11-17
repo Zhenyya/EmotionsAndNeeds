@@ -15,8 +15,7 @@ public enum NeedCard {
     BELONGING("ПРИНАЛЕЖНІСТЬ", "ПРИНАДЛЕЖНОСТЬ"), CLOSENESS("БЛИЗЬКІСТЬ", "БЛИЗОСТЬ"),
     CONSISTENCY("УЗГОДЖЕНІСТЬ", "СОГЛАСОВАННОСТЬ"), FRIENDSHIP("ДРУЖБА", "ДРУЖБА"),
     COOPERATION("СПІВПРАЦЯ", "СОТРУДНИЧЕСТВО"), MUTUALITY("ВЗАЄМНІСТЬ", "ВЗАИМНОСТЬ"),
-    ;
-    // I will add names of needs here
+
     /*
 PARTICIPATION  УЧАСТЬ  УЧАСТИЕ
 SUPPORT  ПІДТРИМКА  ПОДДЕРЖКА
@@ -50,8 +49,6 @@ STABILITY  СТАБІЛЬНІСТЬ  СТАБИЛЬНОСТЬ
 CARE  ТУРБОТА  ЗАБОТА
 SELF-ACCEPTANCE  ПРИЙНЯТТЯ СЕБЕ  ПРИНЯТИЕ СЕБЯ
 SELF-ACTUALIZATION  САМОАКТУАЛІЗАЦІЯ  САМОАКТУАЛИЗАЦИЯ
-
-
 
      */
 
