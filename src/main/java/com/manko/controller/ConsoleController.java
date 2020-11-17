@@ -35,9 +35,10 @@ public class ConsoleController {
                     // some code
                     break;
                 case "Q":
+                    view.quit();
                     break;
                 default:
-                    System.out.println("Invalid input. try again");
+                    view.showInvalidInputMessage();
             }
         } while(!userChoice.equals("Q"));
     }
@@ -63,6 +64,9 @@ public class ConsoleController {
             userInput = view.workWithCard(card);
             if(userInput.equals("Y")) {
                 // some code
+            }
+            if(userInput.equals("Q")) {
+                break;
             }
         }
     }
