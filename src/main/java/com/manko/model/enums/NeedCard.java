@@ -15,6 +15,7 @@ public enum NeedCard {
     BELONGING("ПРИНАЛЕЖНІСТЬ", "ПРИНАДЛЕЖНОСТЬ"), CLOSENESS("БЛИЗЬКІСТЬ", "БЛИЗОСТЬ"),
     CONSISTENCY("УЗГОДЖЕНІСТЬ", "СОГЛАСОВАННОСТЬ"), FRIENDSHIP("ДРУЖБА", "ДРУЖБА"),
     COOPERATION("СПІВПРАЦЯ", "СОТРУДНИЧЕСТВО"), MUTUALITY("ВЗАЄМНІСТЬ", "ВЗАИМНОСТЬ"),
+    ;
 
     /*
 PARTICIPATION  УЧАСТЬ  УЧАСТИЕ
