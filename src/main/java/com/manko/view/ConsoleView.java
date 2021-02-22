@@ -31,13 +31,26 @@ public class ConsoleView {
 
     public String start() {
         showMainMenu();
-        System.out.println("Please, select the menu point.");
-        return scanner.nextLine().toUpperCase();
+        return getUserChoice("Please, select the menu point.");
     }
 
     public String workWithCard(String card) {
         System.out.println(card);
-        System.out.println("Does this card fit your mood? \\nPlease, input <Y> if it does or <N> if it doesn't");
+        return getUserChoice("Please press <Q> to return to the main menu, " +
+                "<Y> - if this card fits your mood, and <N> if doesn't");
+    }
+
+    private String getUserChoice(String message) {
+        System.out.println(message);
         return scanner.nextLine().toUpperCase();
+    }
+
+    public void quit() {
+        System.out.println("Thank you for using my application. Have a good mood!");
+        scanner.close();
+    }
+
+    public void showInvalidInputMessage() {
+        System.out.println("You entered an invalid point of menu.");
     }
 }
