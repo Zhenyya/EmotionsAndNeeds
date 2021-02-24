@@ -40,6 +40,7 @@ public enum NeedCard {
     }
 
     public String getNameUkr() {
+        // add some words just for check work with Github
         return nameUkr;
     }
 
