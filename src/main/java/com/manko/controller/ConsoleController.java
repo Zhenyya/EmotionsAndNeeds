@@ -62,12 +62,14 @@ public class ConsoleController {
         String userInput;
         for (String card : setCards) {
             userInput = view.workWithCard(card);
-            if(userInput.equals("Y")) {
-                // some code
+            if (userInput.equals("N")) {
+                continue;
             }
-            if(userInput.equals("Q")) {
+            if (userInput.equals("Q")) {
                 break;
             }
+            // some code
+            System.out.println("This card fits your mood!"); // delete later
         }
     }
 }
