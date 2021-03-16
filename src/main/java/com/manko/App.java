@@ -11,5 +11,6 @@ public class App {
         ConsoleView view = new ConsoleView();
         ConsoleController controller = new ConsoleController(view);
         controller.run();
+
     }
 }
