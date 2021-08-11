@@ -15,10 +15,10 @@ public class ConsoleView {
     public ConsoleView() {
         scanner = new Scanner(System.in);
         mainMenu = new ArrayList<>();
-        mainMenu.add("1 - start work with cards of emotions");
-        mainMenu.add("2 - start work with cards of needs");
-        mainMenu.add("3 - print the chosen cards of emotions");
-        mainMenu.add("4 - print the chosen cards of needs");
+        mainMenu.add("1 - work with cards of EMOTIONS");
+        mainMenu.add("2 - work with cards of NEEDS");
+        mainMenu.add("3 - print the chosen cards of EMOTIONS");
+        mainMenu.add("4 - print the chosen cards of NEEDS");
         mainMenu.add("Q - exit");
     }
 
@@ -35,9 +35,9 @@ public class ConsoleView {
     }
 
     public String workWithCard(String card) {
-        System.out.println(card);
-        return getUserChoice("Please press <Q> to return to the main menu, " +
-                "<Y> - if this card fits your mood, and <N> if doesn't");
+        System.out.println("\n" + card);
+        return getUserChoice("Please press any key except <N> or <Q> if this card fits your mood, " +
+                "<N> if doesn't, and <Q> to return to the main menu");
     }
 
     private String getUserChoice(String message) {
